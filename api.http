@@ -6,3 +6,13 @@ Content-Type: application/json
     "details": "Evento de Node.js",
     "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/2199fd0f-61c6-4d0e-91af-fc3ab65fc49d/attendees
+Content-Type: application/json
+
+{
+    "name": "Eduardo Medeiros",
+    "email": "medeirosdinieduardo@gmail.com"
+}
