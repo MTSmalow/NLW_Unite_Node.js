@@ -2,14 +2,14 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Nlw Unite",
-    "details": "Evento de Node.js",
-    "maximumAttendees": 100
+  "title": 123,
+  "details": null,
+  "maximumAttendees": 1
 }
 
 ###
 
-POST http://localhost:3333/events/2199fd0f-61c6-4d0e-91af-fc3ab65fc49d/attendees
+POST http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees
 Content-Type: application/json
 
 {
@@ -19,8 +19,15 @@ Content-Type: application/json
 
 ###
 
-GET  http://localhost:3333/events/2199fd0f-61c6-4d0e-91af-fc3ab65fc49d
+GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43
 
 ###
 
-GET  http://localhost:3333/attendees/1/badge
+GET http://localhost:3333/attendees/3/badge
+###
+
+GET http://localhost:3333/attendees/4/check-in
+
+###
+
+GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees?query=diego
